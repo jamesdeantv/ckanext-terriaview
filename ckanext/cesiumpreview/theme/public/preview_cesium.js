@@ -27,10 +27,10 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                     }],
                     "catalogIsUserSupplied": true,
                     "homeCamera": {
-                        "west": 105,
-                        "south": -45,
-                        "east": 155,
-                        "north": -5
+                        "west": 151.158,
+                        "south": -33.939,
+                        "east": 151.248,
+                        "north": -33.845
                     }
 
                 }
@@ -70,7 +70,7 @@ ckan.module('cesiumpreview', function (jQuery, _) {
             var style = 'height: 600px; width: 100%; border: none;';
             var display = 'allowFullScreen mozAllowFullScreen webkitAllowFullScreen';
 
-            var html = '<iframe src="' + 'http://52.64.153.184:5000/' + '></iframe>';
+            var html = '<iframe src="' + vis_server + '#clean&start=' + encoded_config + '" style="' + style + '" ' + display + '></iframe>';
 
             console.log(html);
 
