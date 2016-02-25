@@ -5,7 +5,7 @@ ckan.module('cesiumpreview', function (jQuery, _) {
             var self = this;
 
 //      var vis_server = 'http://localhost';  //local
-            var vis_server = 'http://nationalmap.research.nicta.com.au/sydney-esp';
+            var vis_server = '/map/';
 
             var config = {
                 "version": "0.0.03",
@@ -70,7 +70,7 @@ ckan.module('cesiumpreview', function (jQuery, _) {
             var style = 'height: 600px; width: 100%; border: none;';
             var display = 'allowFullScreen mozAllowFullScreen webkitAllowFullScreen';
 
-            var html = '<iframe src="' + vis_server + '#clean&start=' + encoded_config + '" style="' + style + '" ' + display + '></iframe>';
+            var html = '<iframe src="' + vis_server + '#clean&mode=preview&hideExplorerPanel=1&start=' + encoded_config + '" style="' + style + '" ' + display + '></iframe>';
 
             console.log(html);
 
